@@ -1,14 +1,24 @@
-Step to Run
-1. Create Virtual Environment
-    pyhton3 -m venv venv
+Initalization Steps
+1. move to directory Where you want to Store the repository
+2. Clone the repository
+    \n\tgit clone <repoLink>
+
+
+Steps to Run
+
+1. Create Virtual Environment\n
+    \tpyhton3 -m venv venv
 2. Activate Virtual Environment
-    In Linux/ Macos - source venv/bin/activate
-    In Windows - venv\Scripts\activate
+    \n\tIn Linux/ Macos - source venv/bin/activate
+    \n\tIn Windows - venv\Scripts\activate
 3. Install Dependencies
-    pip install -r rewuirements.txt
-4. Run the app.py
-    python3 app.py
+    \n\tpip install -r rewuirements.txt
+4. To Run in development 
+    \n\tpython3 run.py
+    \nTo Run in (WSGI Server) Production
+    \n\t python wsgi.py
+
 
 Update Requirements File
-pip freeze > requirements.txt
+ n\tpip freeze > requirements.txt
 
