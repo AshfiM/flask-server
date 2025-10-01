@@ -1,8 +1,14 @@
 #Initalization Steps
 1. move to directory Where you want to Store the repository
 2. Clone the repository
-    ```git clone <repoLink>```
+    ```\ngit clone <repoLink>```
+3. Create .env file and .env.production file in your repo folder
+4. Store follwing values
 
+FLASK_ENV=development
+FLASK_SECRET_KEY=dev_secret_key
+JWT_SECRET_KEY=dev_jwt_secret
+SQLALCHEMY_DATABASE_URL=dataabse
 
 #Steps to Run
 
