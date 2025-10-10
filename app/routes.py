@@ -1,7 +1,8 @@
+from crypt import methods
 from flask import Blueprint, jsonify
 
 main_bp = Blueprint("main", __name__)
 
-@main_bp.route("/")
+@main_bp.route("/", methods=["GET"])
 def home():
     return jsonify({"msg":"hello world"})
