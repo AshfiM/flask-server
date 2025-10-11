@@ -13,19 +13,19 @@ SQLALCHEMY_DATABASE_URL=dataabse
 #Steps to Run
 
 1. Create Virtual Environment
-    -``python3 -m venv venv``
+    - ``python3 -m venv venv``
 2. Activate Virtual Environment
-    -``In Linux/ Macos - source venv/bin/activate``
-    -``In Windows - venv\Scripts\activate``
+    - ``In Linux/ Macos - source venv/bin/activate``
+    - ``In Windows - venv\Scripts\activate``
 3. Install Dependencies
     ``pip install -r requirements.txt``
 4. To Run 
     ##To run in development
-    -``python3 run.py``
+    - ``python3 run.py``
     ##To Run in (WSGI Server) Production``
-    -``python wsgi.py``
+    - ``python wsgi.py``
 
 
 #Update Requirements File
-    -``pip freeze > requirements.txt``
+    - ``pip freeze > requirements.txt``
 
