@@ -22,10 +22,10 @@ SQLALCHEMY_DATABASE_URL=dataabse
 3. Install Dependencies
     - ``pip install -r requirements.txt``
 4. To Run 
-    ##To run in development
-    - ``python3 run.py``
-    ##To Run in (WSGI Server) Production``
-    - ``python wsgi.py``
+    - To run in development
+        - ``python3 run.py``
+    - To Run in (WSGI Server) Production``
+        - ``python wsgi.py``
 
 
 #Update Requirements File
