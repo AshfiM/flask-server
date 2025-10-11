@@ -24,7 +24,7 @@ SQLALCHEMY_DATABASE_URL=dataabse
 4. To Run 
     - To run in development
         - ``python3 run.py``
-    - To Run in (WSGI Server) Production``
+    - To Run in (WSGI Server) Production
         - ``python wsgi.py``
 
 
