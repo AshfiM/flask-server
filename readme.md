@@ -1,9 +1,9 @@
 #Initalization Steps
 1. move to directory Where you want to Store the repository
 2. Clone the repository
-    ``git clone <repoLink>``
+    - ``git clone <repoLink>``
 3. Create .env file and .env.production file in your repo folder
-4. Store follwing values in both
+4. Store follwing values in both env files 
 ```
 FLASK_ENV=development
 FLASK_SECRET_KEY=dev_secret_key
@@ -18,7 +18,7 @@ SQLALCHEMY_DATABASE_URL=dataabse
     - ``In Linux/ Macos - source venv/bin/activate``
     - ``In Windows - venv\Scripts\activate``
 3. Install Dependencies
-    ``pip install -r requirements.txt``
+    - ``pip install -r requirements.txt``
 4. To Run 
     ##To run in development
     - ``python3 run.py``
@@ -27,5 +27,5 @@ SQLALCHEMY_DATABASE_URL=dataabse
 
 
 #Update Requirements File
-    - ``pip freeze > requirements.txt``
+- ``pip freeze > requirements.txt``
 
