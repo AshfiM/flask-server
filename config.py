@@ -1,6 +1,5 @@
+from datetime import timedelta
 import os
-
-from flask.cli import F
 
 class Config:
     # Flask session secret
@@ -14,10 +13,12 @@ class Config:
     #JWT
     JWT_TOKEN_LOCATION = ["cookies"]
     JWT_COOKIE_SECURE = False
-    JWT_CSRF_PROTECT = True
+    JWT_COOKIE_CSRF_PROTECT = True
     JWT_ACCESS_COOKIE_PATH = "/"
     JWT_REFRESH_COOKIE_PATH = "/auth/refresh"
     JWT_COOKIE_SAME_SITE = "None"
+    JWT_ACCESS_TOKEN_EXPIRES = timedelta(minutes=5)
+    JWT_REFRESH_TOKEN_EXPIRES = timedelta(days=7)
     
     DEBUG = False
 

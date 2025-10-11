@@ -2,8 +2,9 @@ from flask import Flask
 from config import config
 import os
 from .extensions import jwt, db, cors
-from .auth.routes import auth_bp
+from .auth import auth_bp
 from .routes import main_bp
+from .api import dataSets_bp, users_bp
 
 def create_app(env_name=None):
     app = Flask(__name__)
@@ -16,4 +17,7 @@ def create_app(env_name=None):
     
     app.register_blueprint(main_bp)
     app.register_blueprint(auth_bp, url_prefix="/auth")
+    app.register_blueprint(dataSets_bp, url_prefix="/api/datasets")
+    app.register_blueprint(users_bp, url_prefix="/api/users")
+    
     return app
