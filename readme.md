@@ -4,6 +4,7 @@
     - ``git clone <repoLink>``
 3. Create .env file and .env.production file in your repo folder
 4. Store follwing values in both env files 
+5. Create database
 ```
 FLASK_ENV=development
 FLASK_SECRET_KEY=dev_secret_key
@@ -23,9 +24,20 @@ SQLALCHEMY_DATABASE_URL=dataabse
     - ``pip install -r requirements.txt``
 4. To Run 
     - To run in development
-        - ``python3 run.py``
-    - To Run in (WSGI Server) Production
-        - ``python wsgi.py``
+        - In Mac 
+            - ``python3 run.py``
+        - In Windows
+            - ``python run.py``
+    - To Run in (nginx web sever -> gunicorn -> Flask) Production
+        - In windows
+            - Install nginx server
+            - Run
+                - ``python runServer.py``
+        - In Mac
+            - Install nginx through homebrew
+                - ``brew install nginx``
+            - Run
+                - ``python3 runServer.py``
 
 
 #Update Requirements File
